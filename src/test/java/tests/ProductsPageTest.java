@@ -1,6 +1,5 @@
 package tests;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -35,13 +34,5 @@ public class ProductsPageTest extends BaseTest {
 
     }
 
-    @Test(description = "Проверка на возможность выхода из сайта", enabled = false)
-    public void logOutTest() {
-        loginPage.open();
-        loginPage.login("standard_user", "secret_sauce");
-        productsPage.getMenu();
-        driver.findElement(By.id("logout_sidebar_link")).click();
-        String loginButton = driver.findElement(By.id("login-button")).getAttribute("value");
-        assertEquals(loginButton, "Login", "Неуспешный выход из сайта");
-    }
+
 }
