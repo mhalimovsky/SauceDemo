@@ -33,6 +33,4 @@ public class ProductsPageTest extends BaseTest {
         assertEquals(productsPage.getLinkedInLink(), "LinkedIn", "NOT FOUND");
 
     }
-
-
 }
