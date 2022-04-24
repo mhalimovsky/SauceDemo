@@ -35,7 +35,7 @@ public class ProductsPageTest extends BaseTest {
 
     }
 
-    @Test(description = "Проверка на возможность выхода из сайта")
+    @Test(description = "Проверка на возможность выхода из сайта", enabled = false)
     public void logOutTest() {
         loginPage.open();
         loginPage.login("standard_user", "secret_sauce");
