@@ -33,7 +33,8 @@ public class BaseTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        options.setHeadless(true);
+       // options.addArguments("--headless");
         driver = new ChromeDriver(options);
 
         loginPage = new LoginPage(driver);
