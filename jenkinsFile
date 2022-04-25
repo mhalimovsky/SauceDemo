@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/mhalimovsky/SauceDemo.git'
-                git branch: ' ', url: 'https://github.com/mhalimovsky/SauceDemo.git'
+                git branch: 'feature/TMS-17/SauseDemo', url: 'https://github.com/mhalimovsky/SauceDemo.git'
 
                 // Run Maven on a Unix agent.
                 sh "mvn clean test"
